@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Information Technology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://vignan.ac.in/images/LOGO_change.jpg" alt="Vignan Logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="https://vignan.ac.in/hyd/ithome.php" target="_blank" id="departments-link">Departments</a></li>
+                    <li><a href="https://vignan.ac.in/vignantest/departments/deptpeople.php?deptid=sch3_dept3&school=sch3&deptnm=IT"
+                            target="_blank">Faculty</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <div class="hod-container">
+                <img src="https://vignan.ac.in/Facultyprofiles/uploads/213/profilepic213.png" alt="HOD Photo"
+                    class="hod-photo">
+                <div class="hod-message">
+                    <h3>Dr. N. Veeranjaneyulu
+                        Professor & HoD, CA Dept.</h3>
+                    <p> The Department of Computer Applications at Vignan's Foundation for Science, Technology &
+                        Research (Deemed to be University) is Research-oriented, Student-Centered department offering
+                        undergraduate and postgraduate programs in Information Technology and Computer Applications.
+                        The department promotes world-class research in computer-related disciplines with an absolute
+                        commitment to excellence in teaching. The department additionally offers value-addition
+                        programs to give extra inputs like communication skills, soft skills and project management
+                        skills, etc. The Department is determined to raise the confidence levels of its students and
+                        thereby improve their competencies. This finally establishes them as full-fledged
+                        professionals for the software industry. The consistent growth and development of a student
+                        admitted into the IT program at the institution is reflected in the extraordinary academic
+                        results, that is, a pass percentage of 85% and above in examinations, and early placement of a
+                        good number of students in IT companies.
+
+                    </p>
+                </div>
+            </div>
+            <div class="departments-dropdown" id="departments-dropdown">
+                <label for="department-select">Select a Department:</label>
+                <select id="department-select">
+                    <optgroup label="BCA">
+                        <option value="bca-1">BCA - 1st Year</option>
+                        <option value="bca-2">BCA - 2nd Year</option>
+                        <option value="bca-3">BCA - 3rd Year</option>
+                    </optgroup>
+                    <optgroup label="MCA">
+                        <option value="mca-1">MCA - 1st Year</option>
+                        <option value="mca-2">MCA - 2nd Year</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const departmentsLink = document.getElementById('departments-link');
+        const departmentsDropdown = document.getElementById('departments-dropdown');
+
+        departmentsLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            window.open("https://vignan.ac.in/hyd/ithome.php", "_blank"); // Open in new tab
+            // departmentsDropdown.scrollIntoView({ behavior: 'smooth' }); // If you still want to scroll
+        });
+    </script>
+
+</body>
+
+</html>
